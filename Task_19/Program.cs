@@ -16,7 +16,7 @@ if (number < 0)
 {
     number = number * -1;
 } 
-if (number < 9999 || number > 99999)
+if (number <= 9999 || number > 99999)
 {
     Console.Write("Введено неподходящее число");
 }
