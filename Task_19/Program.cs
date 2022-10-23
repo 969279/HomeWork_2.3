@@ -12,13 +12,20 @@ if (number == 0)
 } 
 else 
 {
-    if (number < -99999 || number > 99999)
+    if (number < -99999 || number >= -9999)
     {
-    Console.Write("Введено неподходящее число!");
+        if(number < 10000 || number > 99999)
+        {
+            Console.Write("Введено неподходящее число!");
+        }
+        else
+        {
+            Calc(number);
+        }
     }
     else
     {
-    Calc(number);
+    Calc(number); 
     }
 }
 
